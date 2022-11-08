@@ -7,7 +7,7 @@ const cors = require("cors");
 const jobsHandler = require("./jobs.js");
 const {postJobs, getSavedJobs, updateJob, deleteJob} = require("./saved.js");
 const mongoose = require("mongoose");
-const Job = require("./models/job.js");
+// const Job = require("./models/job.js");
 
 
 //middleware
