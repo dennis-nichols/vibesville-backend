@@ -16,7 +16,8 @@ async function jobsHandler(req, res, next) {
     for (let job of job_data_send) {
 
       let get_city_data = async (job) => {
-        let city = job.city;
+        let city = job.city + ', ' + job.state;
+        console.log(city);
         let city_url = `https://api.teleport.org/api/cities/?search=${city}&limit=1&embed=city%3Asearch-results%2Fcity%3Aitem%2Fcity%3Aurban_area%2Fua%3Ascores`;
         let city_results = await axios.get(city_url);
         let city_object = city_results.data?._embedded["city:search-results"][0]?._embedded[
