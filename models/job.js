@@ -11,7 +11,7 @@ const jobSchema = new Schema({
   company: { type: String, required: true },
   redirect_url: { type: String, required: false },
   city: { type: String, required: true },
-  city_score: { type: Number, required:true },
+  city_score: { type: Number, required:false },
   state: { type: String, required: true },
   latitude: { type: String, required: false },
   longitude: { type: String, required: false },
