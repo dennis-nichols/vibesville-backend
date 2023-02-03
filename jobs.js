@@ -56,12 +56,4 @@ class Job {
   }
 }
 
-
-
-// class City {
-//   constructor(object) {
-//     this.urban_area = object.data._embedded[0]._embedded.city:item._embedded.city:urban_area._links.ua:indentifying-city.name;
-//   }
-// }
-
 module.exports = jobsHandler;
